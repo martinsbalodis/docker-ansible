@@ -13,6 +13,7 @@ apt-add-repository ppa:ansible/ansible && \
 apt-get update && \
 apt-get install -y ansible && \
 apt-get remove -y --purge software-properties-common && \
+apt-get autoremove -y && \
 apt-get clean && \
 apt-get autoclean && \
 rm -rf /var/lib/apt/lists/*
